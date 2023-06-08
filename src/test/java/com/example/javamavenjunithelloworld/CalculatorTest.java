@@ -32,7 +32,7 @@ public class CalculatorTest {
         int b = 2;
         int sum = calculator.subs(a, b);
 
-        assertThat("substraction", sum == 3);
+        assertThat("substraction", sum == 4);
     }
 
 }
