@@ -11,6 +11,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
  * <p/>
  * A unit test aims to test all code and code paths of a specific class.
  */
+/*more comment*/
 public class CalculatorTest {
 
     @Test
