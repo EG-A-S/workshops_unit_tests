@@ -29,7 +29,3 @@ jobs:
           cache: maven
       - name: Build with Maven
         run: mvn -B package --file pom.xml
-        
-      - name: SonarQube Maven
-        run: ./mvnw sonar:sonar -Dsonar.host.url=${{ secrets.SONARQUBE_HOST }} -Dsonar.login=${{ secrets.ASONARQUBE_TOKEN }}
-
