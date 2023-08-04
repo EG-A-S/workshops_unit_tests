@@ -95,7 +95,7 @@
                     <includeSystemScope>true</includeSystemScope>
                     <includeTestScope>false</includeTestScope>
                     <includeLicenseText>false</includeLicenseText>
-                    <outputFormat>all</outputFormat>
+                    <outputFormat>xml</outputFormat>
                     <outputName>bom</outputName>
                 </configuration>
             </plugin>
