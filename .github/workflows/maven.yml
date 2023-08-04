@@ -29,3 +29,11 @@ jobs:
           cache: maven
       - name: Build with Maven
         run: mvn -B package --file pom.xml
+      - name: OWASP
+        uses: DependencyTrack/gh-upload-sbom@v2.0.0
+        with:
+          serverhostname: 'dt.cto.aks.egdev.eu'
+          apikey: '${{ secrets.SECRET_OWASP_DT_KEY }}'
+          projectname: 'github_demo_dependency'
+          projectversion: 'master'
+          autocreate: true
