@@ -37,3 +37,4 @@ jobs:
           projectname: 'github_demo_dependency'
           projectversion: 'master'
           autocreate: true
+          bomfilename: '/home/runner/work/github_demo/github_demo/target/bom.xml'
