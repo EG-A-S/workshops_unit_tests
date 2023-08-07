@@ -1,10 +1,11 @@
 name: gitleaks
+
 on:
-  pull_request:
   push:
-  workflow_dispatch:
-  schedule:
-    - cron: "0 4 * * *" # run once a day at 4 AM
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
 jobs:
   scan:
     name: gitleaks
@@ -16,4 +17,4 @@ jobs:
       - uses: gitleaks/gitleaks-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITLEAKS_LICENSE: BDA736-F68978-41B767-386623-FDEAEC-V3
+          GITLEAKS_LICENSE: ${{ secrets.GITLEAKS_LICENSE}} # Only required for Organizations, not personal accounts.
