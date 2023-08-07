@@ -13,6 +13,7 @@ public class CalculatorApp {
      */
     public static void main(String[] args) {
         Calculator calc = new Calculator();
+        String password = "abasfasf";
         int a = 1;
         int b = 2;
         int c = calc.add(a, b);
