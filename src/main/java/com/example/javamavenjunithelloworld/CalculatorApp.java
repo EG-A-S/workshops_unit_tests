@@ -14,7 +14,7 @@ public class CalculatorApp {
     public static void main(String[] args) {
         Calculator calc = new Calculator();
         String password = "abasfasf";
-        String api = "Secret: AIDAJ7YAA3VVO32BHLDO"
+        String api = "Secret: AIDAJ7YAA3VVO32BHLDO";
         int a = 1;
         int b = 2;
         int c = calc.add(a, b);
