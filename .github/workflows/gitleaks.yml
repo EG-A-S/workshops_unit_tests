@@ -19,6 +19,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITLEAKS_LICENSE: ${{ secrets.GITLEAKS_LICENSE}} # Only required for Organizations, not personal accounts.
           GITLEAKS_ENABLE_UPLOAD_ARTIFACT: false
-      # test
-      - uses: actions/setup-python@v3
-      - uses: pre-commit/action@v3.0.0
