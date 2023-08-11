@@ -13,8 +13,8 @@
 #       - name: Checkout code  
 #         uses: EG-A-S/cto-actions-zephyr@v0.1
 #         with:
-#             tests_kind: 'JUnit '
+#             tests_kind: 'JUnit'
 #             tests_path: 'build/test-results/test/'
-#             jira_project: 'NGA'      
+#             jira_project: 'DEM'      
 #             auto_test_creation: 'True'
 #             api_token: ${{secrets.JIRA_TOKEN}}
