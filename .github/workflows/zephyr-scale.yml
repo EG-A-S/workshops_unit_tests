@@ -1,4 +1,4 @@
-name: Zephyr Scale
+name: Zephyr Scale integration test
 
 on:
   push:
@@ -8,8 +8,7 @@ on:
     
 jobs:
   zephyrscale:
-    runs-on: ubuntu-latest
-    name: Zephyr Scale integration test
+    runs-on: [self-hosted, k8s]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
