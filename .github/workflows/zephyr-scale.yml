@@ -7,8 +7,9 @@ on:
     branches: [ "master" ]
     
 jobs:
-  zephyrscale:
+  ZephyrTest:
     runs-on: [self-hosted, k8s]
+    name: Zephyr Scale integration test
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -16,8 +17,8 @@ jobs:
         id: Zephyr
         uses: EG-A-S/cto-actions-zephyr@main
         with:
-            tests_kind: 'JUnit'
-            tests_path: 'src/test/java/com/example/javamavenjunithelloworld'
-            jira_project: 'DEM'      
-            auto_test_creation: 'True'
+            tests_kind: 'Cucumber'
+            tests_path: src/test/java/com/example/javamavenjunithelloworld
+            jira_project: 'DEM'       
+            auto_test_creation: 'False' 
             api_token: ${{secrets.JIRA_TOKEN}}
