@@ -9,9 +9,12 @@ on:
 jobs:
   zephyrscale:
     runs-on: ubuntu-latest
+    name: Zephyr Scale integration test
     steps:
-      - name: Checkout code  
-        uses: EG-A-S/cto-actions-zephyr@v0.1
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Test Zephyr
+        uses: EG-A-S/cto-actions-zephyr@main
         with:
             tests_kind: 'JUnit'
             tests_path: './src/test/java/com/example/javamavenjunithelloworld/'
