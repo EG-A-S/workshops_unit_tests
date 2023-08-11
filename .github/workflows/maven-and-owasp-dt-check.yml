@@ -36,11 +36,3 @@ jobs:
           apikey: '${{ secrets.SECRET_OWASP_DT_KEY }}'
           project: 'e06b988c-2100-4e95-b6eb-5d07792b6f42'
           bomfilename: '/home/runner/work/github_demo/github_demo/target/bom.xml'
-      - name: Zephyr Scale 
-        uses: EG-A-S/cto-actions-zephyr@v0.1
-        with:
-          tests_kind: 'JUnit'
-          tests_path: './src/test/java/com/example/javamavenjunithelloworld/'
-          jira_project: 'DEM'      
-          auto_test_creation: 'True'
-          api_token: ${{secrets.JIRA_TOKEN}}
