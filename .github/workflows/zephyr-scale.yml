@@ -14,10 +14,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Test Zephyr
+        id: Zephyr
         uses: EG-A-S/cto-actions-zephyr@main
         with:
             tests_kind: 'JUnit'
-            tests_path: './src/test/java/com/example/javamavenjunithelloworld/'
+            tests_path: 'src/test/java/com/example/javamavenjunithelloworld'
             jira_project: 'DEM'      
             auto_test_creation: 'True'
             api_token: ${{secrets.JIRA_TOKEN}}
