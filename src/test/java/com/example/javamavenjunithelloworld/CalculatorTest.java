@@ -22,7 +22,7 @@ public class CalculatorTest {
         int b = 2;
         int sum = calculator.add(a, b);
 
-        assertThat("sum", sum == 3);
+        assertThat("sum", sum == 5);
     }
 
     @Test
