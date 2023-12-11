@@ -12,6 +12,7 @@ This example demonstrates:
 
 * To run the unit tests, call `mvn test`
 
+
 ## Conventions
 
 This example follows the following basic conventions:
